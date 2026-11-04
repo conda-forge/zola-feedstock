@@ -1,5 +1,5 @@
 context:
-  version: "0.22.1"
+  version: "0.23.6"
 
 package:
   name: zola
@@ -7,11 +7,10 @@ package:
 
 source:
   url: https://github.com/getzola/zola/archive/v${{ version }}.tar.gz
-  sha256: 0f59479e05bce79e8d5860dc7e807ea818986094469ed8bf0bb46588ade95982
+  sha256: 193db594222cd9c1097387ce17272cbbe672c3a894c263f6f4c436a7fedb379f
 
 build:
   number: 0
-  skip: ppc64le
 
 requirements:
   build:
@@ -22,7 +21,6 @@ requirements:
     - pkg-config
   host:
     - oniguruma
-    - openssl
 
 tests:
   - script:
